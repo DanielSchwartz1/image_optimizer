@@ -12,3 +12,6 @@ The script is using the 2 tools:
 You can install both via "yum install $toolname"
 
 The script searches for all .png, .jpg and .jpeg files in a folder and all subfolders (e.g. /wp-content/uploads/) and will run it through a loop to optimize the images.
+
+The script also changes the grants back to 640 and the owner back to user:user (in the example to apache:apache).
+This is needed because the 2 tools change the grants.
